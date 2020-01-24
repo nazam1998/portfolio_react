@@ -10,14 +10,14 @@ const Nav = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav row offset-3 col-6 text-center">
+                <div className="navbar-nav offset-lg-3 col-lg-6 text-center">
 
-                    <a className="col nav-item nav-link active" href="#">Home<span className="sr-only">(current)</span></a>
-                    <a className="col nav-item nav-link" href="#">About</a>
-                    <a className="col nav-item nav-link" href="#">Services</a>
-                    <a className="col nav-item nav-link" href="#">Blog</a>
-                    <a className="col nav-item nav-link" href="#">Pages</a>
-                    <a className="col nav-item nav-link" href="#">Contact</a>
+                    <a className="col-lg col  nav-item nav-link active" href="#">Home<span className="sr-only">(current)</span></a>
+                    <a className="col-lg col nav-item nav-link" href="#">About</a>
+                    <a className="col-lg col nav-item nav-link" href="#">Services</a>
+                    <a className="col-lg col nav-item nav-link" href="#">Blog</a>
+                    <a className="col-lg col nav-item nav-link" href="#">Pages</a>
+                    <a className="col-lg col nav-item nav-link" href="#">Contact</a>
 
                     <button className='btn btn-primary w-25 col-2 offset-2 rounded-0'>Contact me</button>
                 </div>

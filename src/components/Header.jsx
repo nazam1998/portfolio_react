@@ -1,39 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
-import Circle from '../images/circle.png'
+import Circle from '../images/circle.png';
+import Computer from '../images/computer.jpg';
+import Square from '../images/square-dotted.png';
+
 const Header = () => {
-    const [count, setCount] = useState(0);
+    const [i, setI] = useState(0);
     const [letter, setLetter] = useState([
-        { char: "N", className: 'd-none' },
-        { char: "a", className: 'd-none' },
-        { char: "z", className: 'd-none' },
-        { char: "a", className: 'd-none' },
-        { char: "m", className: 'd-none' },
+        { char: "N", show: 'd-none' },
+        { char: "a", show: 'd-none' },
+        { char: "z", show: 'd-none' },
+        { char: "a", show: 'd-none' },
+        { char: "m", show: 'd-none' },
     ]);
 
     useEffect(() => {
-        let i = 0;
-        setInterval(() => {
+        setTimeout(() => {
 
             let temp = [...letter];
-            temp[i].className = '';
-            i++;
-            i %= letter.length;
+
+            temp[i].show = 'show';
+
+            setI((i + 1) % letter.length);
+
             setLetter(temp);
         }, 300);
-    }, [letter]);
+    }, [i]);
 
     return (
 
         <div id='header'>
             <Nav />
+            <img src={Computer} alt="" id='computer' />
             <img src={Circle} alt="" id='circle' />
-            <h1 className='text-center my-5 text-white'>
+            <img src={Square} alt="" id='square' />
+            <h1 className='text-center my-5 text-white' id='me'>
 
-                Hello ! This is {letter.map((e, i) => <span className={e.className} key={i}>{e.char}</span>)}
+                Hello ! This is {letter.map((e, i) => (e.show !== 'd-none' && <span key={i}>{e.char}</span>))}
                 <span className='blink'>|</span>
+                <p className='text-center text-white' id='trait'>Web Developper</p>
             </h1>
-            <h3 className='text-center text-white'><span>-</span>Web Developper</h3>
 
         </div>
     )
