@@ -25,4 +25,14 @@
   opacity: 0.2;
 }
 
+.blink {
+  animation: blinker 1s infinite linear;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
