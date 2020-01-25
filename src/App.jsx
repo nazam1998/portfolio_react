@@ -11,6 +11,7 @@ const App = () => {
     return (
         <div>
             <Header />
+            <Section1 />
 
         </div>
     )
