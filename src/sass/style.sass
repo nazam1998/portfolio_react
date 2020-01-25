@@ -6,14 +6,17 @@
     nav
         font-size: 13px
         z-index: 4
-        a
-            color: #ffffff
-        button
-            position: relative
-            right: -33%
-            font-size: 10px
-            width: 20%
-            background-color: #d465ef
+        .navbar-nav
+            a
+                color: #ffffff
+            button
+                position: relative
+                right: -33%
+                font-size: 10px
+                width: 20%
+                background-color: #d465ef
+                z-index: 4
+
     #circle
         position: absolute
         top: -20%
@@ -53,10 +56,10 @@
     &::before
         content: '___  '
         position: relative
-        bottom: 10px
+        bottom: 15px
 
 .blink
-    animation: blinker 1s infinite linear
+    animation: blinker 0.5s infinite linear
 
 @keyframes blinker
     50%
