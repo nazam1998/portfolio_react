@@ -25,7 +25,7 @@ const Header = () => {
 
             setLetter(temp);
         }, 300);
-    }, [i]);
+    }, [i, letter]);
 
     return (
 
@@ -34,12 +34,18 @@ const Header = () => {
             <img src={Computer} alt="" id='computer' />
             <img src={Circle} alt="" id='circle' />
             <img src={Square} alt="" id='square' />
+
             <h1 className='text-center my-5 text-white' id='me'>
 
                 Hello ! This is {letter.map((e, i) => (e.show !== 'd-none' && <span key={i}>{e.char}</span>))}
                 <span className='blink'>|</span>
                 <p className='text-center text-white' id='trait'>Web Developper</p>
             </h1>
+            <div id="social-head" className='text-white'>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
 
         </div>
     )

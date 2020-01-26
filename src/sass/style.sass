@@ -7,8 +7,10 @@ body
     background: radial-gradient(250px at 90% 75%,#c557ed,#6c40dd),radial-gradient(250px at 50% 75%,#6c40dd,#6a4eee)
     overflow-y: hidden
     nav
+        top: -50
         font-size: 13px
         z-index: 4
+        transition: top 1s
         .navbar-nav
             a
                 color: #ffffff
@@ -54,12 +56,30 @@ body
             font-size: 70%
 .sticky
     position: fixed
+    top: 0
     width: 100%
 #trait
     &::before
         content: '___  '
         position: relative
         bottom: 15px
+#social-head
+    position: absolute
+    display: flex
+    flex-direction: column
+    right: 5%
+    top: 40%
+    z-index: 4
+    i
+        cursor: pointer
+        margin: 15px 0
+        font-size: 70%
+        border: solid 1px #a25aec
+        border-radius: 50%
+        padding: 10px
+        text-align: center
+        &:hover
+            background: linear-gradient(to bottom,#615cfd 0%,#d465ef 100%)
 
 .blink
     animation: blinker 0.5s infinite linear

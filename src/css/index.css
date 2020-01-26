@@ -10,8 +10,10 @@ body {
   overflow-y: hidden;
 }
 #header nav {
+  top: -50;
   font-size: 13px;
   z-index: 4;
+  transition: top 1s;
 }
 #header nav .navbar-nav a {
   color: #ffffff;
@@ -64,6 +66,7 @@ body {
 
 .sticky {
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -71,6 +74,27 @@ body {
   content: "___  ";
   position: relative;
   bottom: 15px;
+}
+
+#social-head {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 5%;
+  top: 40%;
+  z-index: 4;
+}
+#social-head i {
+  cursor: pointer;
+  margin: 15px 0;
+  font-size: 70%;
+  border: solid 1px #a25aec;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+}
+#social-head i:hover {
+  background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
 }
 
 .blink {

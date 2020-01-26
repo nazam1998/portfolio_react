@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../images/logo.png'
 const Nav = () => {
-
+    const [navEtat, setNavEtat] = useState('bg-transparent ');
+    const change = () => {
+        if (window.scrollY > 350) {
+            setNavEtat('bg-dark sticky');
+        } else {
+            setNavEtat('bg-transparent');
+        }
+    }
+    useEffect(
+        window.onscroll = change
+    )
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-transparent mx-auto">
+        <nav className={"navbar navbar-expand-lg navbar-light mx-auto " + navEtat}>
             <img src={Logo} alt="" className='img-fluid w-25 col-lg-1' />
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
