@@ -96,5 +96,12 @@ body {
 #section-1 h2 {
   font-weight: bold;
 }
+#section-1 .service {
+  border: 1px solid #e8e8e8;
+  transition: 1.5s;
+}
+#section-1 .service:hover {
+  border: 1.5px solid blue;
+}
 
 /*# sourceMappingURL=index.css.map */
