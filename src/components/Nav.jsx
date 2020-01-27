@@ -4,14 +4,16 @@ const Nav = () => {
     const [navEtat, setNavEtat] = useState('bg-transparent ');
     const change = () => {
         if (window.scrollY > 350) {
-            setNavEtat('bg-dark sticky');
+            setNavEtat('sticky');
         } else {
-            setNavEtat('');
+            setNavEtat('bg-transparent');
         }
     }
+
     useEffect(
         window.onscroll = change
-    )
+    );
+
     return (
 
         <nav className={"navbar navbar-expand-lg navbar-light mx-auto " + navEtat}>

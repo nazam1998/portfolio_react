@@ -17,18 +17,18 @@ const Section1 = () => {
                     <br /> & digital projects</h2>
             </div>
             <div className="container my-5 mx-auto">
-                <div className="row">
-                    <div className="col-lg col-8 p-5  mx-4 my-3 service">
+                <div className="row mx-auto">
+                    <div className="col-lg col p-4  mx-4 my-3 service">
                         <img className='img-fluid' src={Graphic} alt="" />
                         <h4 className='my-4'>Graphic design</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur itaque nesciunt </p>
                     </div>
-                    <div className="col-lg col-8 p-5  mx-4 my-3 service">
+                    <div className="col-lg col p-4  mx-4 my-3 service">
                         <img className='img-fluid' src={Web} alt="" />
                         <h4 className='my-4'>Web design</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur itaque nesciunt </p>
                     </div>
-                    <div className="col-lg col-8 p-5  mx-4 my-3 service">
+                    <div className="col-lg col p-4  mx-4 my-3 service">
                         <img className='img-fluid' src={Mobile} alt="" />
                         <h4 className='my-4'>Mobile app</h4>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur itaque nesciunt </p>

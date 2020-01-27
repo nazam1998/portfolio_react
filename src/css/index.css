@@ -15,7 +15,6 @@ body {
   font-size: 13px;
   z-index: 4;
   transition: top 1s;
-  background: rgba(0, 0, 0, 0);
 }
 #header nav .navbar-nav a {
   color: #ffffff;
@@ -70,6 +69,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #6c40dd;
 }
 
 #trait::before {
@@ -173,22 +173,98 @@ body {
   color: red;
 }
 
-#section3 h2 {
+#section3 {
+  margin-top: 80px;
+}
+#section3 #about-me h2 {
   font-weight: bold;
 }
-#section3 p {
+#section3 #about-me p {
   font-size: 12px;
   color: #666666;
 }
-#section3 button {
+#section3 #about-me span {
+  font-weight: bold;
+  position: absolute;
+  top: -99%;
+  right: -23%;
+  font-size: 160px;
+  opacity: 0.05;
+  word-wrap: normal;
+}
+#section3 #about-me button {
   color: white;
   background-color: #615cfd;
   font-size: 11px;
 }
-#section3 button:hover {
+#section3 #about-me button:hover {
   background-color: white;
   color: #615cfd;
   border: #615cfd solid 0.5px;
+}
+#section3 #about-me #dotted {
+  position: absolute;
+  top: -40%;
+  right: 10%;
+  width: 45%;
+  height: 75%;
+  z-index: 0;
+}
+#section3 #skills .carte {
+  transition: 1s;
+}
+#section3 #skills .carte:hover {
+  box-shadow: 7px 7px #615cfd;
+}
+#section3 #skills .carte:hover .number h2 {
+  color: white;
+  font-size: 60px;
+}
+#section3 #skills .carte svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 3;
+}
+#section3 #skills .carte svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+#section3 #skills .carte svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+}
+#section3 #skills .carte .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#section3 #skills .carte .percent .number {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#section3 #skills .carte .percent .number h2 {
+  color: #777777;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+#section3 #skills .text {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=index.css.map */
