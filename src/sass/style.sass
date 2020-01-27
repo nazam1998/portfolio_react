@@ -12,7 +12,7 @@ body
         top: -50
         font-size: 13px
         z-index: 4
-        transition: top 1s
+        transition: 1s
         .navbar-nav
             a
                 color: #ffffff
@@ -177,19 +177,21 @@ body
     #skills
         .carte
             transition: 1s
+            border-right: 1px solid rgba(0, 0, 0, 0.1)
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
             &:hover
                 box-shadow: 7px 7px #615cfd
                 .number
                     h2
-                        color: white
-                        font-size: 60px 
-    
+                        color: grey
+                        font-size: 60px
+
             svg
                 position: relative
                 width: 150px
                 height: 150px
                 z-index: 3
-                circle
+                .circle
                     width: 100%
                     height: 100%
                     fill: none
@@ -223,3 +225,44 @@ body
             font-size: 20px
             font-weight: 400
             transition: 1s
+            color: #444444
+            text-shadow: 1px 1px rgba(0, 0, 0,0.3 )
+#section4
+    background-image: url('../images/carousel-bg.jpg')
+    height: 500px
+    width: 100%
+    background-position: center
+    background-size: contain
+    background-color: black
+    background-repeat: no-repeat
+    .carousel
+        overflow-x: hidden
+        .row
+            transition: 1s
+            position: relative
+            .carousel-content
+                margin: auto 0
+                text-align: center
+
+html
+
+    scroll-behavior: smooth
+
+#load
+
+    margin-top: 300px
+
+    .fa-circle-notch
+
+        font-size: 300px
+
+        animation: spin infinite 10s linear
+
+@keyframes spin
+
+    0%
+
+        transform: rotate(0deg) translate(0px) rotate(0deg)
+
+    100%
+        transform: rotate(360deg) translate(0px) rotate(360deg)

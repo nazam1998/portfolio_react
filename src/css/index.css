@@ -14,7 +14,7 @@ body {
   top: -50;
   font-size: 13px;
   z-index: 4;
-  transition: top 1s;
+  transition: 1s;
 }
 #header nav .navbar-nav a {
   color: #ffffff;
@@ -212,12 +212,14 @@ body {
 }
 #section3 #skills .carte {
   transition: 1s;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #section3 #skills .carte:hover {
   box-shadow: 7px 7px #615cfd;
 }
 #section3 #skills .carte:hover .number h2 {
-  color: white;
+  color: grey;
   font-size: 60px;
 }
 #section3 #skills .carte svg {
@@ -226,7 +228,7 @@ body {
   height: 150px;
   z-index: 3;
 }
-#section3 #skills .carte svg circle {
+#section3 #skills .carte svg .circle {
   width: 100%;
   height: 100%;
   fill: none;
@@ -234,7 +236,7 @@ body {
   stroke-linecap: round;
   transform: translate(5px, 5px);
 }
-#section3 #skills .carte svg circle:nth-child(2) {
+#section3 #skills .carte svg .circle:nth-child(2) {
   stroke-dasharray: 440;
 }
 #section3 #skills .carte .percent {
@@ -265,6 +267,50 @@ body {
   font-size: 20px;
   font-weight: 400;
   transition: 1s;
+  color: #444444;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#section4 {
+  background-image: url("../images/carousel-bg.jpg");
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+}
+#section4 .carousel {
+  overflow-x: hidden;
+}
+#section4 .carousel .row {
+  transition: 1s;
+  position: relative;
+}
+#section4 .carousel .row .carousel-content {
+  margin: auto 0;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#load {
+  margin-top: 300px;
+}
+#load .fa-circle-notch {
+  font-size: 300px;
+  animation: spin infinite 10s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translate(0px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(0px) rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

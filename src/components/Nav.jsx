@@ -3,7 +3,7 @@ import Logo from '../images/logo.png'
 const Nav = () => {
     const [navEtat, setNavEtat] = useState('bg-transparent ');
     const change = () => {
-        if (window.scrollY > 350) {
+        if (window.scrollY > 500) {
             setNavEtat('sticky');
         } else {
             setNavEtat('bg-transparent');
@@ -24,9 +24,9 @@ const Nav = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav offset-lg-3 col-lg-6 text-center">
 
-                    <a className="col-lg col nav-item nav-link active" href="#">Home<span className="sr-only">(current)</span></a>
-                    <a className="col-lg col nav-item nav-link" href="#">About</a>
-                    <a className="col-lg col nav-item nav-link" href="#">Services</a>
+                    <a className="col-lg col nav-item nav-link active" href="#header">Home<span className="sr-only">(current)</span></a>
+                    <a className="col-lg col nav-item nav-link" href="#section3">About</a>
+                    <a className="col-lg col nav-item nav-link" href="#section2">Services</a>
                     <a className="col-lg col nav-item nav-link" href="#">Blog</a>
                     <a className="col-lg col nav-item nav-link" href="#">Pages</a>
                     <a className="col-lg col nav-item nav-link" href="#">Contact</a>
