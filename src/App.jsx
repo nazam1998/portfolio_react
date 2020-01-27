@@ -13,6 +13,7 @@ const App = () => {
             <Header />
             <Section1 />
             <Section2 />
+            <Section3 />
 
         </div>
     )

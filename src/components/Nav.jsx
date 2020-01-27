@@ -6,7 +6,7 @@ const Nav = () => {
         if (window.scrollY > 350) {
             setNavEtat('bg-dark sticky');
         } else {
-            setNavEtat('bg-transparent');
+            setNavEtat('');
         }
     }
     useEffect(

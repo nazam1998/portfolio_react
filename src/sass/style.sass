@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap')
+
 body
     margin: 0 auto
     overflow-x: hidden
@@ -11,6 +13,7 @@ body
         font-size: 13px
         z-index: 4
         transition: top 1s
+        background: rgba(0,0 ,0 ,0 )
         .navbar-nav
             a
                 color: #ffffff
@@ -89,7 +92,7 @@ body
         opacity: 0.5
 
 #section-1
-    position: absolute
+    position: relative
     background-color: white
     z-index: 2
     width: 100%
@@ -104,3 +107,54 @@ body
         transition: 1.5s
         &:hover
             border: 1.5px solid blue
+
+#section-dark-bg
+
+    background-color: #001d38
+    height: 600px
+    span
+        font-family: 'Muli', sans-serif
+        font-style: 13px
+        font-weight: 300
+        text-transform: uppercase
+        letter-spacing: 3px
+#image-area
+    position: relative
+    margin-top: -265px
+    button
+        color: #615cfd
+        border: #615cfd 0.5px solid
+        font-size: 11px
+        &:hover
+            color: white
+            background-color: #615cfd
+.image-pro
+    &:hover
+        p
+            left: 50%
+            z-index: 6
+            background-color: purple
+    img
+        cursor: pointer
+        object-fit: cover
+        height: 45vh
+        width: 100%
+    p
+        position: absolute
+        left: 0
+        color: red
+#section3
+    h2
+        font-weight: bold
+    p
+        font-size: 12px
+        color: #666666
+
+    button
+        color: white
+        background-color: #615cfd
+        font-size: 11px
+        &:hover
+            background-color: white
+            color: #615cfd
+            border: #615cfd solid 0.5px

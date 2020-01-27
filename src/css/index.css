@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 body {
   margin: 0 auto;
   overflow-x: hidden;
@@ -14,6 +15,7 @@ body {
   font-size: 13px;
   z-index: 4;
   transition: top 1s;
+  background: rgba(0, 0, 0, 0);
 }
 #header nav .navbar-nav a {
   color: #ffffff;
@@ -107,7 +109,7 @@ body {
   }
 }
 #section-1 {
-  position: absolute;
+  position: relative;
   background-color: white;
   z-index: 2;
   width: 100%;
@@ -126,6 +128,67 @@ body {
 }
 #section-1 .service:hover {
   border: 1.5px solid blue;
+}
+
+#section-dark-bg {
+  background-color: #001d38;
+  height: 600px;
+}
+#section-dark-bg span {
+  font-family: "Muli", sans-serif;
+  font-style: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#image-area {
+  position: relative;
+  margin-top: -265px;
+}
+#image-area button {
+  color: #615cfd;
+  border: #615cfd 0.5px solid;
+  font-size: 11px;
+}
+#image-area button:hover {
+  color: white;
+  background-color: #615cfd;
+}
+
+.image-pro:hover p {
+  left: 50%;
+  z-index: 6;
+  background-color: purple;
+}
+.image-pro img {
+  cursor: pointer;
+  object-fit: cover;
+  height: 45vh;
+  width: 100%;
+}
+.image-pro p {
+  position: absolute;
+  left: 0;
+  color: red;
+}
+
+#section3 h2 {
+  font-weight: bold;
+}
+#section3 p {
+  font-size: 12px;
+  color: #666666;
+}
+#section3 button {
+  color: white;
+  background-color: #615cfd;
+  font-size: 11px;
+}
+#section3 button:hover {
+  background-color: white;
+  color: #615cfd;
+  border: #615cfd solid 0.5px;
 }
 
 /*# sourceMappingURL=index.css.map */
