@@ -241,9 +241,41 @@ body
             transition: 1s
             position: relative
             .carousel-content
-                margin: auto 0
+                margin: 200px 0
                 text-align: center
+                color: white
+#section5
+    background-color: #001d38
 
+    #formulaire
+        margin-top: 100px
+        font-size: 13px
+        h2
+            word-wrap: none
+        form
+            padding: 100px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 50px auto
+        label
+            color: white
+            align-self: center
+            margin-top: 10px
+        input[name="age"]
+            text-align: center
+        button
+            background-color: #d465ef
+            color: white
+            border: none
+            border-radius: 0
+            transition: 0.5s
+            &:active,
+            &:hover
+                box-shadow: 1px 1px black
+                border-radius: 20%
+                background-color: #c354de
 html
 
     scroll-behavior: smooth
