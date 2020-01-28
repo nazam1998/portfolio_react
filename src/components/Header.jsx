@@ -29,7 +29,7 @@ const Header = () => {
 
     return (
 
-        <div id='header'>
+        <header id='header'>
             <Nav />
             <img src={Computer} alt="" id='computer' />
             <img src={Circle} alt="" id='circle' />
@@ -47,7 +47,7 @@ const Header = () => {
                 <i className="fab fa-instagram"></i>
             </div>
 
-        </div>
+        </header>
     )
 };
 export default Header

@@ -3,6 +3,7 @@
 body
     margin: 0 auto
     overflow-x: hidden
+
 #header
     width: 100%
     height: 600px
@@ -91,13 +92,17 @@ body
     50%
         opacity: 0.5
 
+
+
+
+
 #section-1
     position: relative
     background-color: white
     z-index: 2
     width: 100%
     hr
-        width: 3%
+        width: 45px
         transform: rotate(90deg)
         background-color: #6969a5
     h2
@@ -129,7 +134,9 @@ body
             color: white
             background-color: #615cfd
 .image-pro
+    transition: 1s
     &:hover
+        box-shadow: 1px 1px black
         p
             left: 50%
             z-index: 6
@@ -143,6 +150,14 @@ body
         position: absolute
         left: 0
         color: red
+
+
+.modal 
+    position: absolute
+    background-color: rgba(0, 0, 0, 0.5)
+    overflow: hidden
+    display: none
+    
 #section3
     margin-top: 80px
     #about-me
@@ -258,7 +273,7 @@ body
             flex-direction: column
             justify-content: center
             align-items: center
-            margin: 50px auto
+            margin: 50px auto 0 auto
         label
             color: white
             align-self: center
@@ -276,6 +291,16 @@ body
                 box-shadow: 1px 1px black
                 border-radius: 20%
                 background-color: #c354de
+footer
+    background-color: #001d38
+    span,
+    i
+        cursor: pointer
+        margin: 10px auto
+    .separator
+        background-color: gray
+        width: 80%
+        margin: 0 auto
 html
 
     scroll-behavior: smooth

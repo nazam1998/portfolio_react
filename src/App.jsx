@@ -11,29 +11,30 @@ const App = () => {
 
     const [loader, setLoader] = useState(false);
     useEffect(() => {
-        setTimeout(() => setLoader(true), 2000);
+        setTimeout(() => setLoader(true), 1000);
     });
-    if (loader) {
+    // if (loader) {
 
-        return (
+    return (
 
-            <div>
+        <div>
 
-                <Header />
-                <Section1 />
-                <Section2 />
-                <Section3 />
-                <Section4 />
-                <Section5/>
-            </div>
+            <Header />
+            <Section1 />
+            <Section2 />
+            <Section3 />
+            <Section4 />
+            <Section5 />
+            <Footer />
+        </div>
 
-        )
-    } else {
-        return (
-            <div className='text-center mt-5' id='load'>
-                <i className="fas fa-circle-notch fa-5x mt-5"></i>
-            </div>
-        )
-    }
+    )
+    // } else {
+    //     return (
+    //         <div className='text-center mt-5' id='load'>
+    //             <i className="fas fa-circle-notch fa-5x mt-5"></i>
+    //         </div>
+    //     )
+    // }
 };
 export default App;

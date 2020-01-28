@@ -115,7 +115,7 @@ body {
   width: 100%;
 }
 #section-1 hr {
-  width: 3%;
+  width: 45px;
   transform: rotate(90deg);
   background-color: #6969a5;
 }
@@ -156,6 +156,12 @@ body {
   background-color: #615cfd;
 }
 
+.image-pro {
+  transition: 1s;
+}
+.image-pro:hover {
+  box-shadow: 1px 1px black;
+}
 .image-pro:hover p {
   left: 50%;
   z-index: 6;
@@ -171,6 +177,13 @@ body {
   position: absolute;
   left: 0;
   color: red;
+}
+
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: none;
 }
 
 #section3 {
@@ -309,7 +322,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
 }
 #section5 #formulaire label {
   color: white;
@@ -330,6 +343,20 @@ body {
   box-shadow: 1px 1px black;
   border-radius: 20%;
   background-color: #c354de;
+}
+
+footer {
+  background-color: #001d38;
+}
+footer span,
+footer i {
+  cursor: pointer;
+  margin: 10px auto;
+}
+footer .separator {
+  background-color: gray;
+  width: 80%;
+  margin: 0 auto;
 }
 
 html {
