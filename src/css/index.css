@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 body {
-  margin: 0 auto;
   overflow-x: hidden;
+  width: 100%;
 }
 
 #header {
@@ -14,7 +14,7 @@ body {
   top: -50;
   font-size: 13px;
   z-index: 4;
-  transition: 1s;
+  transition: top 1s;
 }
 #header nav .navbar-nav a {
   color: #ffffff;
@@ -65,9 +65,18 @@ body {
   font-size: 70%;
 }
 
+.middle {
+  position: fixed;
+  top: -100px;
+  transition: 1s;
+  width: 100%;
+  background-color: #6c40dd;
+}
+
 .sticky {
   position: fixed;
   top: 0;
+  transition: 1s;
   width: 100%;
   background-color: #6c40dd;
 }
@@ -160,30 +169,30 @@ body {
   transition: 1s;
 }
 .image-pro:hover {
-  box-shadow: 1px 1px black;
+  background-color: black;
 }
-.image-pro:hover p {
-  left: 50%;
-  z-index: 6;
-  background-color: purple;
+.image-pro:hover img {
+  opacity: 0.5;
+}
+.image-pro:hover::before {
+  opacity: 1;
+  left: 40%;
+  z-index: 1;
 }
 .image-pro img {
   cursor: pointer;
+  transition: 1s;
   object-fit: cover;
   height: 45vh;
   width: 100%;
 }
-.image-pro p {
+.image-pro::before {
+  content: "Product Design";
+  transition: 1s;
+  opacity: 0;
   position: absolute;
   left: 0;
-  color: red;
-}
-
-.modal {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  display: none;
+  top: 40%;
 }
 
 #section3 {
@@ -301,9 +310,11 @@ body {
   position: relative;
 }
 #section4 .carousel .row .carousel-content {
-  margin: 200px 0;
+  position: relative;
+  margin: auto 0;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
 
 #section5 {

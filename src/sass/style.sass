@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap')
 
 body
-    margin: 0 auto
     overflow-x: hidden
+    width: 100%
 
 #header
     width: 100%
@@ -13,7 +13,7 @@ body
         top: -50
         font-size: 13px
         z-index: 4
-        transition: 1s
+        transition: top 1s
         .navbar-nav
             a
                 color: #ffffff
@@ -57,9 +57,16 @@ body
         p
             font-weight: normal
             font-size: 70%
+.middle
+    position: fixed
+    top: -100px
+    transition: 1s
+    width: 100%
+    background-color: #6c40dd
 .sticky
     position: fixed
     top: 0
+    transition: 1s
     width: 100%
     background-color: #6c40dd
 #trait
@@ -91,10 +98,6 @@ body
 @keyframes blinker
     50%
         opacity: 0.5
-
-
-
-
 
 #section-1
     position: relative
@@ -136,28 +139,28 @@ body
 .image-pro
     transition: 1s
     &:hover
-        box-shadow: 1px 1px black
-        p
-            left: 50%
-            z-index: 6
-            background-color: purple
+        background-color: black
+        img
+            opacity: 0.5
+        &::before
+            opacity: 1
+            left: 40%
+            z-index: 1
     img
         cursor: pointer
+        transition: 1s
         object-fit: cover
         height: 45vh
         width: 100%
-    p
+
+    &::before
+        content: 'Product Design'
+        transition: 1s
+        opacity: 0
         position: absolute
         left: 0
-        color: red
+        top: 40%
 
-
-.modal 
-    position: absolute
-    background-color: rgba(0, 0, 0, 0.5)
-    overflow: hidden
-    display: none
-    
 #section3
     margin-top: 80px
     #about-me
@@ -256,9 +259,12 @@ body
             transition: 1s
             position: relative
             .carousel-content
-                margin: 200px 0
+                position: relative
+                margin: auto 0
                 text-align: center
                 color: white
+                overflow: hidden
+
 #section5
     background-color: #001d38
 

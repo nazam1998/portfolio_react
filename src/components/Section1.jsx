@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Graphic from '../images/graphic.svg'
 import Web from '../images/web.svg'
 import Mobile from '../images/mobile.svg'
 
 const Section1 = () => {
+
     return (
 
         <div id='section-1' className='text-center p-5'>

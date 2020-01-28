@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../images/logo.png'
 const Nav = () => {
+
     const [navEtat, setNavEtat] = useState('bg-transparent ');
+
+
     const change = () => {
-        if (window.scrollY > 500) {
+
+        if (window.scrollY > 450) {
+
             setNavEtat('sticky');
-        } else {
+
+        } else if (window.scrollY > 330) {
+
+            setNavEtat('middle')
+
+        }
+
+        else {
+
             setNavEtat('bg-transparent');
+
         }
     }
 
