@@ -11,7 +11,7 @@ const Header = () => {
         { char: "a", show: 'd-none' },
         { char: "z", show: 'd-none' },
         { char: "a", show: 'd-none' },
-        { char: "m", show: 'd-none' },
+        { char: "m", show: 'd-none' }
     ]);
 
     useEffect(() => {

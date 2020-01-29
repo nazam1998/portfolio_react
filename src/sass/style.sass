@@ -216,6 +216,7 @@ body
                     stroke-width: 10
                     stroke-linecap: round
                     transform: translate(5px,5px)
+                    transition: 5s
                     &:nth-child(2)
                         stroke-dasharray: 440
             .percent
@@ -253,18 +254,36 @@ body
     background-size: contain
     background-color: black
     background-repeat: no-repeat
+
     .carousel
         overflow-x: hidden
         .row
             transition: 1s
             position: relative
+
             .carousel-content
                 position: relative
-                margin: auto 0
+                margin: 175px 0
                 text-align: center
                 color: white
                 overflow: hidden
 
+#left
+    cursor: pointer
+    position: absolute
+    top: 40%
+    left: -8%
+    opacity: 0.1
+    padding: 10%
+    z-index: 3
+#right
+    cursor: pointer
+    position: absolute
+    top: 40%
+    right: -8%
+    opacity: 0.1
+    padding: 10%
+    z-index: 3
 #section5
     background-color: #001d38
 
@@ -307,6 +326,9 @@ footer
         background-color: gray
         width: 80%
         margin: 0 auto
+    #heart
+        color: red
+
 html
 
     scroll-behavior: smooth

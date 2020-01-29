@@ -13,7 +13,7 @@ const App = () => {
     useEffect(() => {
         setTimeout(() => setLoader(true), 1000);
     });
-    // if (loader) {
+    if (loader) {
 
     return (
 
@@ -29,12 +29,12 @@ const App = () => {
         </div>
 
     )
-    // } else {
-    //     return (
-    //         <div className='text-center mt-5' id='load'>
-    //             <i className="fas fa-circle-notch fa-5x mt-5"></i>
-    //         </div>
-    //     )
-    // }
+    } else {
+        return (
+            <div className='text-center mt-5' id='load'>
+                <i className="fas fa-circle-notch fa-5x mt-5"></i>
+            </div>
+        )
+    }
 };
 export default App;

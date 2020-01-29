@@ -6,18 +6,15 @@ const Skills = (props) => {
 
     useEffect(
         window.onscroll = () => {
-            
-            if (window.scrollY > 2300) {
+            setTimeout(() => {
+                if (point < props.points) {
+                    setPoint(point + 1);
+                }
+                if (bar < props.points) {
+                    setBar(bar + 1);
+                }
+            }, 50);
 
-                setTimeout(() => {
-                    if (point < props.points) {
-                        setPoint(point + 1);
-                    }
-                    if (bar < props.points) {
-                        setBar(bar + 1);
-                    }
-                }, 50);
-            }
         });
 
     return (

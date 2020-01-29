@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = () => {  
 
     return (
 
@@ -20,9 +20,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <hr className='separator'/>
+            <hr className='separator' />
             <div className="copyright text-center text-white p-3">
-                <span>Copyright ©2020 All rights reserved | This Website is made with &hearts; by <a href="#">Nazam</a></span>
+                <span>Copyright ©2020 All rights reserved | This Website is made with <span id='heart'>&hearts;</span> by <a href="#">Nazam</a></span>
             </div>
         </footer>
 
