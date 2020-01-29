@@ -1,7 +1,9 @@
 import React from 'react';
-import Product from '../images/product.webp';
 import Bootstrap from '../images/site_bootstrap.png';
 import Emporium from '../images/site-emporium.png';
+import Oxo from '../images/oxo.png';
+import Snake from '../images/snake.png';
+import Calc from '../images/calculator.png';
 const Section2 = () => {
 
     return (
@@ -15,12 +17,12 @@ const Section2 = () => {
 
                 <div className='row mx-auto text-center justify-content-center'>
 
-                    <div className="image-pro col-lg-4 col-12 my-3"><img src={Product} alt="" className="img-fluid" /></div>
-                    <div className="image-pro col-lg-5 col-12 my-3"><img src={Product} alt="" className="img-fluid" /></div>
+                    <div className="image-pro col-lg-4 col-12 my-3"><img src={Oxo} alt="" className="img-fluid" /></div>
+                    <div className="image-pro col-lg-5 col-12 my-3"><img src={Snake} alt="" className="img-fluid" /></div>
                     <div className="w-100"></div>
                     <div className="image-pro col-lg-3 col-12 my-3"><img src={Bootstrap} alt="" className="img-fluid" /></div>
                     <div className="image-pro col-lg-3 col-12 my-3"><img src={Emporium} alt="" className="img-fluid" /></div>
-                    <div className="image-pro col-lg-3 col-12 my-3"><img src={Product} alt="" className="img-fluid" /></div>
+                    <div className="image-pro col-lg-3 col-12 my-3"><img src={Calc} alt="" className="img-fluid" /></div>
 
                 </div>
                 <button className='btn my-5 rounded-0 px-4 py-2'>More Folio</button>

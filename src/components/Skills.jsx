@@ -3,7 +3,6 @@ const Skills = (props) => {
 
     const [point, setPoint] = useState(0);
     const [bar, setBar] = useState(0);
-
     useEffect(
         window.onscroll = () => {
             setTimeout(() => {
@@ -18,7 +17,7 @@ const Skills = (props) => {
         });
 
     return (
-        <div className="col my-2">
+        <div className="col-lg col my-2">
             <div className='container'>
                 <div className="carte">
                     <div className="box my-5">

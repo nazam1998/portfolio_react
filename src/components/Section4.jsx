@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Section4 = () => {
 
-    const [left, setLeft] = useState(-300);
+    const [left, setLeft] = useState(-400);
 
     const moveNext = () => {
         if (left < 0) {
@@ -11,13 +11,13 @@ const Section4 = () => {
 
         } else {
 
-            setLeft(-300);
+            setLeft(-400);
 
         }
     }
 
     const movePrev = () => {
-        if (left >= -200) {
+        if (left >= -300) {
 
             setLeft(left - 100);
 
@@ -31,7 +31,7 @@ const Section4 = () => {
     useEffect(() => {
 
         const id = setTimeout(() => {
-            if (left >= -200) {
+            if (left >= -300) {
 
                 setLeft(left - 100);
 
@@ -59,6 +59,7 @@ const Section4 = () => {
                         <h4 className='text-danger'>2016-2017</h4>
                         <p>Etude Supérieur HE2B ESI</p>
                         <p>En informatique industrielle Bac 1</p>
+                        <span>Et création du slogan OVTR</span>
                     </div>
                     <div className="carousel-content col-12">
                         <h4 className='text-danger'>2017-2019</h4>
@@ -70,6 +71,11 @@ const Section4 = () => {
                         <p>Formation Molengeek</p>
                         <p>Dans la Coding School X</p>
                         <span>Dans le local avec le mur dégoûtant</span>
+                    </div>
+                    <div className="carousel-content col-12">
+                        <h4 className='text-danger'>23 Janvier 2019</h4>
+                        <p>Découverte du monde</p>
+                        <p>La neige est de l'eau par <span className='text-primary'>Fatima</span></p>
                     </div>
                 </div>
                 <i onClick={moveNext} className="fas fa-arrow-left  fa-2x text-white" id='left'></i>

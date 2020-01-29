@@ -4,6 +4,10 @@ body {
   width: 100%;
 }
 
+#main {
+  overflow-x: hidden;
+}
+
 #header {
   width: 100%;
   height: 600px;
@@ -117,26 +121,28 @@ body {
     opacity: 0.5;
   }
 }
-#section-1 {
+#section1 {
   position: relative;
   background-color: white;
   z-index: 2;
   width: 100%;
 }
-#section-1 hr {
+#section1 hr {
   width: 45px;
   transform: rotate(90deg);
   background-color: #6969a5;
 }
-#section-1 h2 {
+#section1 h2 {
   font-weight: bold;
 }
-#section-1 .service {
+#section1 .service {
   border: 1px solid #e8e8e8;
   transition: 1.5s;
 }
-#section-1 .service:hover {
+#section1 .service:hover {
+  position: relative;
   border: 1.5px solid blue;
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 #section-dark-bg {
@@ -168,9 +174,6 @@ body {
 .image-pro {
   transition: 1s;
 }
-.image-pro:hover {
-  background-color: black;
-}
 .image-pro:hover img {
   opacity: 0.5;
 }
@@ -180,6 +183,7 @@ body {
   z-index: 1;
 }
 .image-pro img {
+  border: 1px black solid;
   cursor: pointer;
   transition: 1s;
   object-fit: cover;

@@ -8,30 +8,41 @@ import Section5 from './components/Section5';
 import Footer from './components/Footer';
 
 const App = () => {
-
     const [loader, setLoader] = useState(false);
+    document.body.className = 'bg-danger';
     useEffect(() => {
-        setTimeout(() => setLoader(true), 1000);
+        setTimeout(() => { setLoader(true); document.body.className = '' }, 2000);
     });
     if (loader) {
 
-    return (
+        return (
 
-        <div>
+            <div id='main'>
 
-            <Header />
-            <Section1 />
-            <Section2 />
-            <Section3 />
-            <Section4 />
-            <Section5 />
-            <Footer />
-        </div>
+                <Header />
+                <Section1 />
+                <Section2 />
+                <Section3 />
+                <Section4 />
+                <Section5 />
+                <Footer />
+                <script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin='true' />
 
-    )
+                <script
+                    src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+                    crossOrigin='true'
+                />
+
+                <script
+                    src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+                    crossOrigin='true'
+                />
+            </div>
+
+        )
     } else {
         return (
-            <div className='text-center mt-5' id='load'>
+            <div className='text-center mt-5 bg-danger' id='load'>
                 <i className="fas fa-circle-notch fa-5x mt-5"></i>
             </div>
         )

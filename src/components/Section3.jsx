@@ -11,16 +11,17 @@ const Section3 = () => {
 
                 <div className="row align-items-center">
                     <div className="offset-lg-2 col-lg-4 my-5">
-                        <span>About</span>
+                        <span>About</span>  
                         <h2>About me</h2>
                         <p className='my-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis blablablablablabalblalbalblalbalbl</p>
-                        <button className="btn rounded-0 px-4 py-2">Download CV</button>
+                        {window.screen.width >= 800 && <button className="btn rounded-0 px-4 py-2" onClick={() => { "window.location.href= 'MUHAMMAD_Nazam_CV.docx';" }}><i className="fa fa-download"></i> Download CV</button>}
                     </div>
 
                     <div className="col-lg-5">
-                        <img src={Square} alt="" id='dotted' />
+                        {window.screen.width > 1000 && <img src={Square} alt="" id='dotted' />}
                         <img src={Bg} alt="" className='img-fluid w-75' />
                     </div>
+                    {window.screen.width < 800 && <button className="btn rounded-0 px-4 py-2 my-5" onClick={() => { "window.location.href= 'MUHAMMAD_Nazam_CV.docx';" }}><i className="fa fa-download"></i> Download CV</button>}
                 </div>
             </div>
             <div className="container">

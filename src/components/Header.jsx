@@ -7,11 +7,11 @@ import Square from '../images/square-dotted.png';
 const Header = () => {
     const [i, setI] = useState(0);
     const [letter, setLetter] = useState([
-        { char: "N", show: 'd-none' },
-        { char: "a", show: 'd-none' },
-        { char: "z", show: 'd-none' },
-        { char: "a", show: 'd-none' },
-        { char: "m", show: 'd-none' }
+        { char: "N", show: 'none' },
+        { char: "a", show: 'none' },
+        { char: "z", show: 'none' },
+        { char: "a", show: 'none' },
+        { char: "m", show: 'none' }
     ]);
 
     useEffect(() => {
@@ -31,21 +31,22 @@ const Header = () => {
 
         <header id='header'>
             <Nav />
-            <img src={Computer} alt="" id='computer' />
+            {window.screen.width>1000&&<img src={Computer} alt="" id='computer' />}
             <img src={Circle} alt="" id='circle' />
             <img src={Square} alt="" id='square' />
 
             <h1 className='text-center my-5 text-white' id='me'>
 
-                Hello ! This is {letter.map((e, i) => (e.show !== 'd-none' && <span key={i}>{e.char}</span>))}
+                Hello ! This is {letter.map((e, i) => (e.show !== 'none' && <span key={i}>{e.char}</span>))}
                 <span className='blink'>|</span>
                 <p className='text-center text-white' id='trait'>Web Developper</p>
             </h1>
-            <div id="social-head" className='text-white'>
+            {window.screen.width > 560 && <div id="social-head" className='text-white'>
                 <i className="fab fa-facebook-f"></i>
                 <i className="fab fa-twitter"></i>
                 <i className="fab fa-instagram"></i>
-            </div>
+            </div>}
+
 
         </header>
     )
