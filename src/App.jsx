@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App = () => {
     const [loader, setLoader] = useState(false);
-    document.body.className = 'bg-danger';
+    document.body.className = 'bg-primary';
     useEffect(() => {
         setTimeout(() => { setLoader(true); document.body.className = '' }, 2000);
     });
@@ -26,24 +26,14 @@ const App = () => {
                 <Section4 />
                 <Section5 />
                 <Footer />
-                <script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin='true' />
-
-                <script
-                    src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-                    crossOrigin='true'
-                />
-
-                <script
-                    src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-                    crossOrigin='true'
-                />
             </div>
 
         )
     } else {
         return (
-            <div className='text-center mt-5 bg-danger' id='load'>
+            <div className='text-center mt-5 text-white' id='load'>
                 <i className="fas fa-circle-notch fa-5x mt-5"></i>
+                <p className='mt-5 fa-5x'>Please wait...</p>
             </div>
         )
     }

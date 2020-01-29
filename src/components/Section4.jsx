@@ -42,7 +42,7 @@ const Section4 = () => {
             }
         }, 5000);
         return () => clearTimeout(id);
-    });
+    })
 
     return (
 
@@ -74,7 +74,7 @@ const Section4 = () => {
                     </div>
                     <div className="carousel-content col-12">
                         <h4 className='text-danger'>23 Janvier 2019</h4>
-                        <p>Découverte du monde</p>
+                        <p>Plus grande Découverte du monde</p>
                         <p>La neige est de l'eau par <span className='text-primary'>Fatima</span></p>
                     </div>
                 </div>

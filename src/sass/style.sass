@@ -142,26 +142,19 @@ body
     transition: 1s
     &:hover
         img
-            opacity: 0.5
-        &::before
+            left: 0
+            transform: rotate(0deg)
+            height: 45vh
             opacity: 1
-            left: 40%
-            z-index: 1
     img
-        border: 1px black solid
+
         cursor: pointer
         transition: 1s
         object-fit: cover
-        height: 45vh
+        height: 50vh
+        opacity: 0.95
+        transform: rotate(5deg)
         width: 100%
-
-    &::before
-        content: 'Product Design'
-        transition: 1s
-        opacity: 0
-        position: absolute
-        left: 0
-        top: 40%
 
 #section3
     margin-top: 80px
@@ -258,6 +251,7 @@ body
     background-repeat: no-repeat
 
     .carousel
+        width: 100%
         overflow-x: hidden
         .row
             transition: 1s
@@ -274,18 +268,22 @@ body
     cursor: pointer
     position: absolute
     top: 40%
-    left: -8%
+    left: -5%
     opacity: 0.1
-    padding: 10%
+    padding: 5%
     z-index: 3
+    border: 1px solid #eeeeee
+    border-radius: 50%
 #right
     cursor: pointer
     position: absolute
     top: 40%
-    right: -8%
+    right: -5%
     opacity: 0.1
-    padding: 10%
+    padding: 5%
     z-index: 3
+    border: 1px solid #eeeeee
+    border-radius: 50%
 #section5
     background-color: #001d38
 
