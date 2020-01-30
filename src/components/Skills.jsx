@@ -10,7 +10,7 @@ const Skills = (props) => {
                     setPoint(point + 1);
                 }
                 if (bar < props.points) {
-                    setBar(bar + 1);
+                    setBar(bar + 5);
                 }
             }, 50);
 
@@ -24,7 +24,7 @@ const Skills = (props) => {
                         <div className="percent">
                             <svg>
                                 <circle cx='60' cy='60' r='60' className='circle'></circle>
-                                <circle cx='60' cy='60' r='60' className='circle' stroke={props.color} strokeDashoffset={true ? (440 - (440 * bar) / 100 + 40) : ''}></circle>
+                                <circle cx='60' cy='60' r='60' className='circle' stroke={props.color} strokeDashoffset={(440 - (440 * bar) / 100 + 40)}></circle>
                             </svg>
                             <div className="number">
                                 <h2>{point}<span>%</span></h2>

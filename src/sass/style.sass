@@ -21,6 +21,10 @@ body
 
             a
                 color: #ffffff
+                &:hover
+                    background: -webkit-linear-gradient(#6c40dd,white)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
             button
                 position: relative
                 right: -33%
@@ -93,6 +97,8 @@ body
         border-radius: 50%
         padding: 10px
         text-align: center
+        transition: 1s
+        background: transparent
         &:hover
             background: linear-gradient(to bottom,#615cfd 0%,#d465ef 100%)
 
