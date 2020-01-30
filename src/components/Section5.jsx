@@ -22,6 +22,7 @@ const Section5 = () => {
                     <label htmlFor="age">Age</label><input type="number" name='age' value={age} onChange={changeAge} />
                     <label htmlFor="date">Birth date</label><input type="date" name='date' />
                     <label htmlFor="mail">Mail address</label><input type="mail" name='mail' placeholder='YourAdress@gmail.com' />
+                    <label htmlFor="message">Message</label><textarea name='message' placeholder='Type your message here...' />
                     <button className="btn btn-success mt-5 px-3 py-2" type='submit'>Submit</button>
                 </form>
             </div>
