@@ -9,9 +9,11 @@ import Footer from './components/Footer';
 
 const App = () => {
     const [loader, setLoader] = useState(false);
+    const [anim, setAnim] = useState('');
     document.body.className = 'bg-primary';
     useEffect(() => {
-        setTimeout(() => { setLoader(true); document.body.className = '' }, 2000);
+        setTimeout(() => setAnim('slide'), 1900)
+        setTimeout(() => { setLoader(true); document.body.className = '' }, 2600);
     });
     if (loader) {
 
@@ -31,7 +33,7 @@ const App = () => {
         )
     } else {
         return (
-            <div className='text-center mt-5 text-white' id='load'>
+            <div className={'text-center mt-5 text-white ' + anim} id='load'>
                 <i className="fas fa-circle-notch fa-5x mt-5"></i>
                 <p className='mt-5 fa-5x'>Please wait...</p>
             </div>

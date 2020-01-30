@@ -21,6 +21,7 @@ body
 
             a
                 color: #ffffff
+                transition: 1s
                 &:hover
                     background: -webkit-linear-gradient(#6c40dd,white)
                     -webkit-background-clip: text
@@ -343,7 +344,7 @@ footer
         color: red
 
 .slide
-    animation: slide
+    animation: slide 1s
 
 html
 
@@ -370,8 +371,9 @@ html
 
 @keyframes slide
     0%
-        transform: translateY(0px)
-    10%
-        transform: translateY(50px)
+        transform: translateX(0px)
+    30%
+        transform: translateX(200px)
     100%
-        transform: translateY(-50px)
+        transform: translateX(-700px)
+        opacity: 0.7

@@ -18,7 +18,7 @@ const Section1 = () => {
                     <br /> & digital projects</h2>
             </div>
 
-            <div className="container my-5 mx-auto" >
+            <div className="container my-5 mx-auto slide" >
                 <div className="row mx-auto">
                     <div className="col-lg col p-4  mx-4 my-3 service">
                         <img className='img-fluid' src={Graphic} alt="" />
