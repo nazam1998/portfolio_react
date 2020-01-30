@@ -5,7 +5,6 @@ import Web from '../images/web.svg'
 import Mobile from '../images/mobile.svg'
 
 const Section1 = () => {
-    const [left, setLeft] = useState(0);
 
     return (
 

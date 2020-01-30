@@ -20,6 +20,9 @@ body {
   z-index: 4;
   transition: top 1s;
 }
+#header nav .navbar-toggler-icon {
+  cursor: pointer;
+}
 #header nav .navbar-nav a {
   color: #ffffff;
 }
@@ -186,7 +189,7 @@ body {
   object-fit: cover;
   height: 50vh;
   opacity: 0.95;
-  transform: rotate(5deg);
+  transform: rotate(2deg);
   width: 100%;
 }
 
@@ -384,6 +387,11 @@ footer span,
 footer i {
   cursor: pointer;
   margin: 10px auto;
+  transition: 1s;
+}
+footer span:hover,
+footer i:hover {
+  color: #d465ef;
 }
 footer .separator {
   background-color: gray;
@@ -392,6 +400,10 @@ footer .separator {
 }
 footer #heart {
   color: red;
+}
+
+.slide {
+  animation: slide;
 }
 
 html {
@@ -412,6 +424,17 @@ html {
   }
   100% {
     transform: rotate(360deg) translate(0px) rotate(360deg);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-50px);
   }
 }
 

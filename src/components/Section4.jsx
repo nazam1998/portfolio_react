@@ -78,8 +78,8 @@ const Section4 = () => {
                         <p>La neige est de l'eau par <span className='text-primary'>Fatima</span></p>
                     </div>
                 </div>
-                <i onClick={moveNext} className="fas fa-arrow-left  fa-2x text-white" id='left'></i>
-                <i onClick={movePrev} className="fas fa-arrow-right fa-2x text-white" id='right'></i>
+                {window.screen.width > 800 && <div><i onClick={moveNext} className="fas fa-arrow-left  fa-2x text-white" id='left'></i>
+                    <i onClick={movePrev} className="fas fa-arrow-right fa-2x text-white" id='right'></i></div>}
             </div>
         </div>
 

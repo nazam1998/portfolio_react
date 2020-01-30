@@ -15,7 +15,10 @@ body
         font-size: 13px
         z-index: 4
         transition: top 1s
+        .navbar-toggler-icon
+            cursor: pointer
         .navbar-nav
+
             a
                 color: #ffffff
             button
@@ -153,7 +156,7 @@ body
         object-fit: cover
         height: 50vh
         opacity: 0.95
-        transform: rotate(5deg)
+        transform: rotate(2deg)
         width: 100%
 
 #section3
@@ -322,12 +325,18 @@ footer
     i
         cursor: pointer
         margin: 10px auto
+        transition: 1s
+        &:hover
+            color: #d465ef
     .separator
         background-color: gray
         width: 80%
         margin: 0 auto
     #heart
         color: red
+
+.slide
+    animation: slide
 
 html
 
@@ -351,3 +360,11 @@ html
 
     100%
         transform: rotate(360deg) translate(0px) rotate(360deg)
+
+@keyframes slide
+    0%
+        transform: translateY(0px)
+    10%
+        transform: translateY(50px)
+    100%
+        transform: translateY(-50px)
