@@ -36,7 +36,7 @@ const Header = () => {
             <img src={Square} alt="" id='square' />
 
             <h1 className='text-center my-5 text-white' id='me'>
-
+        
                 Hello ! This is {letter.map((e, i) => (e.show !== 'none' && <span key={i}>{e.char}</span>))}
                 <span className='blink'>|</span>
                 <p className='text-center text-white' id='trait'>Web Developper</p>

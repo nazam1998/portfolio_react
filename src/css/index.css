@@ -383,14 +383,14 @@ body {
 footer {
   background-color: #001d38;
 }
-footer span,
-footer i {
+footer .container span,
+footer .container i {
   cursor: pointer;
   margin: 10px auto;
   transition: 1s;
 }
-footer span:hover,
-footer i:hover {
+footer .container span:hover,
+footer .container i:hover {
   color: #d465ef;
 }
 footer .separator {
