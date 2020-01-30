@@ -3,9 +3,12 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+body.modal {
+  overflow: hidden;
+}
 
 #main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #header {
@@ -192,13 +195,43 @@ body {
   opacity: 1;
 }
 .image-pro img {
-  cursor: pointer;
   transition: 1s;
   object-fit: cover;
   height: 50vh;
-  opacity: 0.95;
+  opacity: 0.99;
   transform: rotate(2deg);
   width: 100%;
+}
+
+#modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+}
+#modal .carousel {
+  width: 100%;
+  overflow-x: hidden;
+}
+#modal .carousel .row {
+  transition: 1s;
+  position: relative;
+}
+#modal .carousel .row .carousel-content {
+  position: relative;
+  top: 0;
+  margin: 100px auto;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+#modal .carousel .row .carousel-content img {
+  width: 80%;
+  height: 80%;
 }
 
 #section3 {
@@ -384,7 +417,7 @@ body {
 }
 #section5 #formulaire button:active, #section5 #formulaire button:hover {
   box-shadow: 1px 1px black;
-  border-radius: 20%;
+  border-radius: 50%;
   background-color: #c354de;
 }
 
@@ -443,7 +476,7 @@ html {
   }
   100% {
     transform: translateX(-700px);
-    opacity: 0.7;
+    opacity: 0;
   }
 }
 

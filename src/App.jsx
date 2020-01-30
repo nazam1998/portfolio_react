@@ -8,12 +8,12 @@ import Section5 from './components/Section5';
 import Footer from './components/Footer';
 
 const App = () => {
+    const [anim, setAnim] = useState(false);
     const [loader, setLoader] = useState(false);
-    const [anim, setAnim] = useState('');
     document.body.className = 'bg-primary';
     useEffect(() => {
-        setTimeout(() => setAnim('slide'), 1900)
-        setTimeout(() => { setLoader(true); document.body.className = '' }, 2600);
+        setTimeout(() => setAnim(true), 1000)
+        setTimeout(() => { setLoader(true); document.body.className = '' }, 2000);
     });
     if (loader) {
 
@@ -33,7 +33,7 @@ const App = () => {
         )
     } else {
         return (
-            <div className={'text-center mt-5 text-white ' + anim} id='load'>
+            <div className={'text-center mt-5 text-white ' + (anim && 'slide')} id='load'>
                 <i className="fas fa-circle-notch fa-5x mt-5"></i>
                 <p className='mt-5 fa-5x'>Please wait...</p>
             </div>
