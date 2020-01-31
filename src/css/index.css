@@ -20,7 +20,7 @@ body.modal {
 #header nav {
   top: -50;
   font-size: 13px;
-  z-index: 4;
+  z-index: 5;
   transition: top 1s;
 }
 #header nav .navbar-toggler-icon {
@@ -28,7 +28,7 @@ body.modal {
 }
 #header nav .navbar-nav a {
   color: #ffffff;
-  transition: 1s;
+  transition: 1s ease;
 }
 #header nav .navbar-nav a:hover {
   background: -webkit-linear-gradient(#6c40dd, white);
@@ -201,37 +201,6 @@ body.modal {
   opacity: 0.99;
   transform: rotate(2deg);
   width: 100%;
-}
-
-#modal {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  margin: auto;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  overflow: hidden;
-}
-#modal .carousel {
-  width: 100%;
-  overflow-x: hidden;
-}
-#modal .carousel .row {
-  transition: 1s;
-  position: relative;
-}
-#modal .carousel .row .carousel-content {
-  position: relative;
-  top: 0;
-  margin: 100px auto;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-}
-#modal .carousel .row .carousel-content img {
-  width: 80%;
-  height: 80%;
 }
 
 #section3 {
