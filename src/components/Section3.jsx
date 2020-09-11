@@ -30,8 +30,9 @@ const Section3 = () => {
                     <Skills nom='Html' points={90} color='orange' />
                     <Skills nom='Css' points={75} color='blue' />
                     <Skills nom='Javascript' points={80} color='yellow' />
-                    <Skills nom='Bash' points={90} color='black' />
-                    <Skills nom='React' points={40} color='blue' />
+                    <Skills nom='React' points={60} color='blue' />
+                    <Skills nom='Laravel' points={45} color='yellow' />
+                    <Skills nom='Bash' points={25} color='black' />
                 </div>
             </div>
         </div>

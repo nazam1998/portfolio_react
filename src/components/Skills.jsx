@@ -17,7 +17,7 @@ const Skills = (props) => {
         });
 
     return (
-        <div className="col-lg col my-2">
+        <div className="col-lg-3 col my-2">
             <div className='container'>
                 <div className="carte">
                     <div className="box my-5">

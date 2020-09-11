@@ -67,15 +67,16 @@ const Section4 = () => {
                         <p>En informatique de gestion</p>
                     </div>
                     <div className="carousel-content col-12">
+                        <h4 className='text-danger'>2019-2020</h4>
+                        <p>Formation Molengeek</p>
+                        <p>Dans la Coding School X</p>
+                        <span>Formation intensive de 6 mois en tant que Full Stack Web developpeur</span>
+                    </div>
+                    <div className="carousel-content col-12">
                         <h4 className='text-danger'>2018-2019</h4>
                         <p>Formation Molengeek</p>
                         <p>Dans la Coding School X</p>
                         <span>Dans le local avec le mur dégoûtant</span>
-                    </div>
-                    <div className="carousel-content col-12">
-                        <h4 className='text-danger'>23 Janvier 2019</h4>
-                        <p>Plus grande Découverte du monde</p>
-                        <p>La neige est de l'eau par <span className='text-primary'>Fatima</span></p>
                     </div>
                 </div>
                 {window.screen.width > 800 && <div><i onClick={moveNext} className="fas fa-arrow-left  fa-2x text-white" id='left'></i>

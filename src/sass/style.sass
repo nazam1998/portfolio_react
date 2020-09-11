@@ -100,10 +100,12 @@ body
         border-radius: 50%
         padding: 10px
         text-align: center
-        transition: 1s
+        transition: 1s ease
         background: transparent
         &:hover
-            background: linear-gradient(to bottom,#615cfd 0%,#d465ef 100%)
+            transition: 0
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,#d465ef 100%)
+            background-color: #615cfd
 
 .blink
     animation: blinker 0.5s infinite linear
